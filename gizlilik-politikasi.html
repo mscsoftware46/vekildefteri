@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vekil Defteri — Gizlilik Politikası</title>
+<style>
+  :root { --zemin:#f5f3ee; --kart:#fffdf8; --metin:#16191a; --ikincil:#5e6668; --vurgu:#24357a; --cizgi:#dcd8cf; }
+  @media (prefers-color-scheme: dark) { :root { --zemin:#121514; --kart:#1d2120; --metin:#e9ece9; --ikincil:#a9b2ae; --vurgu:#9fb2ff; --cizgi:#343a38; } }
+  body { margin:0; background:var(--zemin); color:var(--metin); font:17px/1.6 -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-size:30px; line-height:1.2; margin:0 0 4px; }
+  h2 { font-size:19px; margin:32px 0 8px; color:var(--vurgu); }
+  .tarih { color:var(--ikincil); font-size:15px; margin-bottom:24px; }
+  .kutu { background:var(--kart); border:1px solid var(--cizgi); border-radius:12px; padding:16px 18px; }
+  ul { padding-left:20px; } li { margin:6px 0; }
+  a { color:var(--vurgu); }
+  h3 { font-size:17px; margin:20px 0 4px; }
+  .alt { color:var(--ikincil); font-size:15px; margin-top:40px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Gizlilik Politikası</h1>
+<div class="tarih">Vekil Defteri (iOS ve Android) · Yürürlük: 12.10.2026</div>
+
+<div class="kutu"><strong>Kısaca:</strong> Vekil Defteri hiçbir veriyi geliştiriciye göndermez; siz açmadıkça üçüncü bir tarafa da göndermez. Uygulamada
+hesap, sunucu, reklam, analiz ve izleme aracı yoktur. Kayıtlarınız telefonunuzda tutulur. Yedek, telefonda şifrelenerek <em>sizin</em> hesabınıza alınır: iPhone'da
+kendi iCloud hesabınıza, Android'de (açarsanız) kendi Google Drive'ınızın gizli uygulama klasörüne. Yedeğin içeriğini
+geliştirici, Apple ya da Google göremez.</div>
+
+<p>"Uygulamayı sunan", "Toplanan veriler", "Ücret", "Veri sorumlusu", "Çocuklar" ve "Değişiklikler" bölümleri iki sürüm için de
+geçerlidir. "Telefonunuzda tutulanlar", "iCloud yedeği", "Cihaz özellikleri ve izinler" ve "Verilerin silinmesi" bölümleri
+iPhone (iOS) sürümünü anlatır; Android sürümü için bunların yerine <a href="#android">Android sürümü</a> bölümü geçerlidir.</p>
+
+<h2>Uygulamayı sunan</h2>
+<p>Mehmet Sait Çakallı (App Store ve Google Play'deki geliştirici). İletişim: <a href="mailto:mscsoftware46@gmail.com">mscsoftware46@gmail.com</a></p>
+
+<h2>Toplanan veriler</h2>
+<p>Geliştirici hiçbir veri toplamaz. Uygulama hesap açtırmaz ve geliştiriciye giriş istemez (Android'de Drive yedeğini açarsanız yalnız Google hesabınızla izin verirsiniz); girdiğiniz dosya, müvekkil, duruşma, süre ve not
+bilgileri geliştiriciye ya da başka bir sunucuya iletilmez.</p>
+
+<h2>Telefonunuzda tutulanlar</h2>
+<ul>
+  <li>Dosyalar (müvekkil, mahkeme, esas no), duruşma ve diğer randevular, süreler, yapılacaklar, gün notları, tebligat kayıtları ve
+  30 gün tutulan son silinenler.</li>
+  <li>Kayıtlar, telefon kilitliyken okunamayan korumalı bir dosyada saklanır ve iPhone'un genel iCloud (cihaz) yedeğine girmez.</li>
+  <li>Ajanda dosyası bir gün okunamazsa, onarım için kopyası telefonda saklanır ve telefondan çıkmaz.</li>
+  <li>İsterseniz uygulama Face ID ya da telefon parolasıyla kilitlenir. Biyometrik veri uygulamaya iletilmez; doğrulamayı iOS yapar.</li>
+</ul>
+
+<h2>iCloud yedeği</h2>
+<ul>
+  <li>Ajanda, telefonda AES-256-GCM ile şifrelenir ve Apple'ın iCloud hizmetinde, <strong>sizin</strong> iCloud hesabınızın özel
+  veritabanına yüklenir. Şifre anahtarı uygulamanın ürettiği rastgele bir anahtardır ve iCloud Anahtar Zinciri'nizde durur;
+  geliştirici bu veritabanına erişemez, Apple şifreli içeriği okuyamaz.</li>
+  <li>Şifresiz kalan yalnız şunlardır: yedeğin tarihi, kurulumu ayırt eden rastgele bir kimlik (cihaz adı değil), anahtarın kısa izi
+  ve kayıt sayıları (ör. "5 dosya · 17 kayıt · 3 süre").</li>
+  <li>Son yedeğe ek olarak son 30 günün her günü için bir kopya saklanır; daha eskileri sonraki yedeklemede silinir. Geri yükleme
+  yaptığınızda ya da başka telefondaki yedeğin yerine geçtiğinizde, önceki hâl en çok üç "geri yüklemeden önce" kopyasında, yenileri
+  gelene kadar saklanır.</li>
+  <li>Yedeği Ayarlar › iCloud yedeği'nden kapatabilirsiniz. Kapalıyken yeni yedek alınmaz ve eski kopyalar silinmez; telefon kaybolur
+  ya da uygulama silinirse son yedekten sonraki kayıtlar geri gelmez.</li>
+</ul>
+
+<h2>Cihaz özellikleri ve izinler</h2>
+<ul>
+  <li><strong>Bildirim:</strong> Süre ve duruşma hatırlatmaları telefonda kurulur. Bildirimde müvekkil adı ve esas no yer almaz; dosya
+  kodu, tür, saat, adliye/salon ve süre adı görünür. Süre adına müvekkil adı yazarsanız kilit ekranında görünebilir.</li>
+  <li><strong>Takvim:</strong> Siz seçerseniz, seçtiğiniz takvimlerdeki duruşma kayıtları ajandaya almak için okunur. Ayarlar'daki "Kayıtları iPhone Takvimi'nde de göster"
+  ayarını açarsanız uygulama, telefonunuzun varsayılan takvim hesabında kendi açtığı "Vekil Defteri" adlı ayrı bir takvime önümüzdeki bir yılın duruşma ve randevularının (kişisel olanlar hariç) ve açık sürelerin son günlerinin bir kopyasını yazar; ayarı kapatınca bu kopya takvim silinir, uygulamadaki kayıtlarınız silinmez. Bu kayıtlarda müvekkil adı
+  ve esas no yoktur; dosya kodu, tür, saat, adliye/salon ve süre adı bulunur. Varsayılan takvim hesabınız iCloud, Google ya da Exchange
+  ise bu kayıtlar o hizmete eşitlenir; o hizmetin gizlilik koşulları geçerlidir.</li>
+  <li><strong>Kamera ve belge tarayıcı:</strong> Zabıt, tensip ya da tebligat sayfasını okumak için, yalnız siz başlattığınızda. Metin
+  tanıma telefonda yapılır.</li>
+  <li><strong>Mikrofon ve konuşma tanıma:</strong> Sesle kayıt eklemek için, yalnız siz başlattığınızda. Tanıma telefonun içinde yapılır;
+  ses telefondan çıkmaz.</li>
+  <li><strong>Paylaş menüsü:</strong> Başka uygulamadan Vekil Defteri'ne paylaştığınız metin, PDF ya da görsel yalnız telefonda okunur;
+  okunup kaydedilince, okunmadan bekliyorsa en geç 30 gün sonra telefondan silinir.</li>
+  <li><strong>Ana ekran ve kilit ekranı bileşeni, Canlı Etkinlik:</strong> Yaklaşan duruşma ve süreleri gösterir; müvekkil adı ve esas no
+  göstermez.</li>
+  <li><strong>Yazdırma ve PDF:</strong> Program çıktısı yalnız siz yazdırdığınızda ya da paylaştığınızda, sizin seçtiğiniz yere gider.</li>
+</ul>
+
+<h2>Ücret</h2>
+<p>Uygulama bu sürümde ücretsizdir ve uygulama içi satın alma yoktur. İleride ücretli özellik eklenirse satın alma iPhone'da Apple (App Store), Android'de Google (Google Play)
+üzerinden yürütülür; geliştirici ödeme ya da kart bilgilerinizi görmez. Bu politika o zaman güncellenir.</p>
+
+<h2>Veri sorumlusu</h2>
+<p>Uygulamaya girdiğiniz müvekkil ve dosya bilgileri bakımından veri sorumlusu sizsiniz. Geliştirici bu bilgilere erişmez,
+onları işlemez ve saklamaz.</p>
+
+<h2>Verilerin silinmesi</h2>
+<p>Uygulamayı sildiğinizde telefondaki kayıtlar silinir. iCloud'daki şifreli yedekler iCloud hesabınızda kalır; iPhone Ayarlar ›
+[adınız] › iCloud › Depolamayı Yönet › Vekil Defteri'nden silebilirsiniz.</p>
+
+<h2 id="android">Android sürümü</h2>
+<p><strong>1. Verileriniz nerede durur.</strong> Dosyalar, duruşmalar, süreler, yapılacaklar ve notlar yalnız telefonunuzda, uygulamanın kendi klasöründe durur. Bu klasör telefonun Google yedeğine ve yeni telefona doğrudan aktarıma girmez. Hesap açmazsınız; geliştiricinin sunucusu yoktur ve geliştirici hiçbir kaydınızı göremez.</p>
+<p><strong>2. Drive yedeği (isteğe bağlı).</strong> Açarsanız ajandanız telefonda AES-256-GCM ile şifrelenir ve kendi Google Drive'ınızın uygulamaya özel gizli klasörüne (appDataFolder) yazılır. Bu klasör Drive listenizde görünmez. Uygulama yalnız bu klasöre erişir; öteki Drive dosyalarınızı göremez, e-posta ya da profil bilgisi istemez.</p>
+<ul><li>Şifre anahtarı Google Block Store'da durur ve uçtan uca şifrelidir: Google dahil kimse yedeğin içeriğini okuyamaz. Bunun için telefonda ekran kilidi (PIN, desen ya da parola) gerekir; ekran kilidi yoksa uygulama Drive yedeğini başlatmaz.</li><li>Şifresiz kalan yalnız şunlardır: yedeğin tarihi, rastgele üretilmiş bir cihaz kimliği, anahtarın izi ve kayıt sayıları (ör. "5 dosya · 17 kayıt · 9 süre"). Bunlar Google Drive'ınızda durur; geliştirici bunlara da erişemez.</li><li>Son 30 günün her günü için bir kopya ve geri yüklemeden önceki 3 kopya saklanır. Yedeği kapatmak eski kopyaları silmez. Silmek için Google Drive'ın web sürümünde Ayarlar › Uygulamaları yönet › Vekil Defteri › Gizli uygulama verilerini sil yolunu izleyin.</li></ul>
+<p><strong>3. Mikrofon (Sesle ekle).</strong> Konuşma yalnız telefonun cihaz içi tanıyıcısıyla yazıya dökülür (Android 12 ve sonrası). Ses hiçbir sunucuya gönderilmez. Cihaz içi tanıyıcı yoksa özellik çalışmaz; ses başka bir yere yönlendirilmez.</p>
+<p><strong>4. Kamera, fotoğraf ve belgeler (zabıt okuma).</strong> Zabıt fotoğrafı telefonun kendi kamera uygulamasıyla çekilir ve uygulamanın geçici klasörüne yazılır; bir sonraki çekimde silinir. Metin tanıma uygulamanın içindeki Google ML Kit kütüphanesiyle telefonda yapılır. Görüntü ve okunan metin telefondan çıkmaz; kütüphanenin Google'a tanılama ve kullanım verisi gönderen bağlantısı uygulamada kapatılmıştır.</p>
+<p><strong>5. Telefon takvimi.</strong> İzin verirseniz uygulama yalnız seçtiğiniz takvimleri telefonda okur ve okuduğunu hiçbir yere göndermez. "Telefon takviminde de göster" açıksa kayıtlar adsız ve esas numarasız olarak telefonda "Vekil Defteri" adlı ayrı bir yerel takvime yazılır. Bu takvim bir hesaba bağlı değildir; ancak bazı üreticilerin takvim yedekleme hizmetleri yerel takvimleri de yedekleyebilir.</p>
+<p><strong>6. Bildirim, bileşen ve kutucuklar.</strong> Hatırlatmalarda, ana ekran bileşeninde, duruşma günü bildiriminde ve telefon takvimi kopyasında müvekkil adı ve esas no görünmez; dosya kodu, kayıt türü, saat, yer ve süre adı görünür. Süre adına müvekkil adı yazmayın.</p>
+<p><strong>7. Kilit.</strong> Uygulama kilidi parmak izi, yüz ya da telefonun ekran kilidiyle açılır. Son uygulamalar ekranında içerik görünmez (Android 12 ve öncesinde yalnız uygulama kilidini kullanıyorsanız).</p>
+<p><strong>8. Paylaş menüsü ve yazdırma.</strong> Paylaş menüsüyle gönderdiğiniz metin, PDF ya da görsel uygulamanın yedeklenmeyen klasörüne alınır ve 30 gün sonra silinir. Yazdırma için üretilen PDF telefonda geçici olarak durur ve silinir. PDF'i paylaştığınızda gideceği yeri siz seçersiniz.</p>
+<p><strong>9. Saklama ve silme.</strong> Silinen kayıtlar 30 gün "Son silinenler"de bekler, sonra silinir. Uygulamayı kaldırmak telefondaki bütün verileri siler; Drive yedeği için 2. maddedeki adımları izleyin.</p>
+<p><strong>10. İletişim.</strong> <a href="mailto:mscsoftware46@gmail.com">mscsoftware46@gmail.com</a></p>
+
+<h2>Çocuklar</h2>
+<p>Uygulama avukatların mesleki kullanımı içindir ve kimseden veri toplamaz.</p>
+
+<h2>Değişiklikler</h2>
+<p>Bu politika değişirse güncel metin bu sayfada, yürürlük tarihiyle yayımlanır.</p>
+<p class="alt"><a href="index.html">Vekil Defteri</a> · <a href="destek.html">Destek</a> · © 2026 Mehmet Sait Çakallı</p>
+</main>
+</body>
+</html>
